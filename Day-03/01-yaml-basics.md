@@ -1,6 +1,6 @@
 # Understanding YAML
 
-YAML (YAML Ain't Markup Language) is a human-readable data serialization format that is commonly used for configuration files and data exchange between languages with different data structures.
+YAML (YAML Ain't Markup Language) is a human-readable data serialization format that is commonly used for configuration files and data exchange between languages with different data structures. YAML is better than JSON because it is much readable format
 
 ## YAML Syntax
 
