@@ -21,7 +21,7 @@ fruits:
   - Banana
 ```
 
-### Dictionary 
+### Dictionary ( Key-value)
 
 ```
 person:
