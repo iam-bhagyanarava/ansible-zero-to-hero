@@ -12,7 +12,7 @@ number: 42
 boolean: true
 ```
 
-### List 
+### List ( defined with hypens)
 
 ```
 fruits:
@@ -21,7 +21,7 @@ fruits:
   - Banana
 ```
 
-### Dictionary ( Key-value)
+### Dictionary ( Key-value pairs)
 
 ```
 person:
