@@ -55,7 +55,8 @@ A Play is a single, complete execution unit within a playbook. It specifies whic
 
 ## Modules
 
-Modules are the building blocks of Ansible tasks. They are small programs that perform a specific action on a managed node, such as installing a package, copying a file, or managing services.
+Modules are the building blocks of Ansible tasks. They are small programs that perform a specific action on a managed node, such as installing a package, copying a file, or managing services. Modules are executed in managed nodes using python which is installed on managed nodes.
+
 Example
 
 The apt module used in a task to install a package:
