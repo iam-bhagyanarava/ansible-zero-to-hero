@@ -13,4 +13,5 @@
         dest: /var/www/html
         owner: root
         group: root
-        mode: '0644'
+        mode: '0644'   #Web servers like Nginx or Apache run as non-root users, so setting file permission to 0644 ensures 
+        they have read access to serve content while restricting write access for security.
