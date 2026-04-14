@@ -6,13 +6,14 @@ A **Playbook** is a YAML file that defines a series of actions to be executed on
 ### Example
 ```
 ---
+#1st play
 - name: Update web servers
   hosts: webservers
   remote_user: root
 
   tasks:
   - name: Ensure apache is at the latest version
-    ansible.builtin.yum:
+    ansible.builtin.yum: 
       name: httpd
       state: latest
 
@@ -21,6 +22,7 @@ A **Playbook** is a YAML file that defines a series of actions to be executed on
       src: /srv/httpd.j2
       dest: /etc/httpd.conf
 
+# 2nd play
 - name: Update db servers
   hosts: databases
   remote_user: root
@@ -84,6 +86,14 @@ Tasks are individual actions within a play that use modules to perform operation
 ## Collections
 
 Collections are a distribution format for Ansible content. They bundle together multiple roles, modules, plugins, and other Ansible artifacts. Collections make it easier to share and reuse Ansible content.
+
+(or) An Ansible Collection is a structured package that contains modules, roles, plugins, and other resources, used to organize and share automation code.
+
+### ansible.builtin.copy
+ansible.builtin → collection
+	•	copy → module inside collections
+
+
 Example
 
 A collection structure might look like this:
@@ -100,7 +110,12 @@ my_collection/
 └── README.md
 ```
 
-### Using a Collection
+### Install Collections and Using a Collection 
+
+ansible-galaxy collection install community.general 
+
+#community.general -> community supported modules 
+ansible.builtin → default modules
 
 ```
 - name: Use a custom module from a collection
